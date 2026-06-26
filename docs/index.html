@@ -2,10 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>reddit-or-not</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit or Not</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>reddit-or-not</h1>
-  <p>Placeholder page served via GitHub Pages from /docs.</p>
+  <div class="container">
+
+    <!-- ── Home ────────────────────────────────────────────────────────────── -->
+    <div id="screen-home" class="screen">
+      <h1>Reddit or Not</h1>
+      <p class="tagline">Find out who among you is chronically online.</p>
+
+      <div class="home-actions">
+        <div class="card">
+          <label class="field-label">Your name</label>
+          <input id="create-name" type="text" placeholder="e.g. Darius" maxlength="20">
+          <button id="btn-create" onclick="onCreateRoom()">Create Room</button>
+        </div>
+
+        <div class="divider">or join an existing room</div>
+
+        <div class="card">
+          <label class="field-label">Room code</label>
+          <input id="join-code" type="text" placeholder="e.g. WXYZ" maxlength="4"
+                 style="text-transform:uppercase; letter-spacing:4px;">
+          <label class="field-label">Your name</label>
+          <input id="join-name" type="text" placeholder="e.g. Alex" maxlength="20">
+          <button id="btn-join" onclick="onJoinRoom()">Join Room</button>
+        </div>
+      </div>
+
+      <div id="home-error" class="error hidden"></div>
+    </div>
+
+    <!-- ── Lobby ────────────────────────────────────────────────────────────── -->
+    <div id="screen-lobby" class="screen hidden">
+      <div class="card center">
+        <span class="field-label">Room code</span>
+        <span id="lobby-code" class="big-code"></span>
+        <span class="field-label">Share this link</span>
+        <span id="lobby-link" class="share-link"></span>
+      </div>
+
+      <div class="section-label">Players</div>
+      <div id="lobby-players"></div>
+
+      <div id="lobby-host-actions" class="hidden">
+        <button id="btn-start" onclick="onAdvancePhase()">Start Game</button>
+        <p class="hint">Need at least 2 players to start.</p>
+      </div>
+      <div id="lobby-waiting" class="waiting hidden">Waiting for host to start…</div>
+    </div>
+
+    <!-- ── Question ─────────────────────────────────────────────────────────── -->
+    <div id="screen-question" class="screen hidden">
+      <div class="progress">Question <span id="q-num"></span> of <span id="q-total"></span></div>
+      <h2 id="q-text"></h2>
+      <div id="q-options" class="options"></div>
+      <p id="q-submitted" class="submitted hidden">Locked in. Waiting for others…</p>
+      <div id="q-host-bar" class="host-bar hidden">
+        <span id="q-count"></span>
+        <button onclick="onAdvancePhase()">Reveal Answers</button>
+      </div>
+    </div>
+
+    <!-- ── Reveal ────────────────────────────────────────────────────────────── -->
+    <div id="screen-reveal" class="screen hidden">
+      <div class="progress">Question <span id="r-num"></span> of <span id="r-total"></span></div>
+      <h2 id="r-text"></h2>
+      <div id="r-answers" class="reveal-answers"></div>
+      <div class="section-label">
+        Leaderboard
+        <span class="hint-inline">(lowest = least reddit = winning)</span>
+      </div>
+      <div id="r-leaderboard"></div>
+      <div id="r-host-bar" class="host-bar hidden">
+        <button id="btn-next" onclick="onAdvancePhase()">Next Question</button>
+      </div>
+    </div>
+
+    <!-- ── Final ─────────────────────────────────────────────────────────────── -->
+    <div id="screen-final" class="screen hidden">
+      <h2>Final Results</h2>
+      <p class="tagline">Lowest score = least reddit = actually has a personality.</p>
+      <div id="final-leaderboard"></div>
+      <a href="." class="btn-ghost">Play Again</a>
+    </div>
+
+  </div>
+  <script src="game.js"></script>
 </body>
 </html>

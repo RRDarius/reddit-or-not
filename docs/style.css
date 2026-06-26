@@ -1,0 +1,327 @@
+/* ── Variables ──────────────────────────────────────────────────────────────── */
+:root {
+  --bg:       #0d0d0d;
+  --surface:  #1a1a1a;
+  --surface2: #242424;
+  --accent:   #ff4500;
+  --accent-lo: #cc3700;
+  --text:     #e8e8e8;
+  --dim:      #888;
+  --green:    #00c853;
+  --red:      #ff1744;
+  --radius:   8px;
+  --max:      480px;
+}
+
+/* ── Reset ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Base ───────────────────────────────────────────────────────────────────── */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px 64px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+}
+
+/* ── Screens ────────────────────────────────────────────────────────────────── */
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hidden { display: none !important; }
+
+/* ── Typography ─────────────────────────────────────────────────────────────── */
+h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.tagline {
+  color: var(--dim);
+  font-size: 0.95rem;
+}
+
+.progress {
+  font-size: 0.78rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hint-inline {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.75rem;
+}
+
+.hint {
+  font-size: 0.82rem;
+  color: var(--dim);
+  text-align: center;
+}
+
+/* ── Card ───────────────────────────────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card.center { align-items: center; text-align: center; }
+
+/* ── Form elements ──────────────────────────────────────────────────────────── */
+.field-label {
+  font-size: 0.8rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--surface2);
+  border: 1px solid #333;
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+input[type="text"]:focus { border-color: var(--accent); }
+
+/* ── Buttons ────────────────────────────────────────────────────────────────── */
+button {
+  width: 100%;
+  padding: 13px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button:hover:not(:disabled) { background: var(--accent-lo); }
+button:disabled { background: #333; color: var(--dim); cursor: not-allowed; }
+
+.btn-ghost {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  background: var(--surface);
+  color: var(--text);
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.15s;
+}
+.btn-ghost:hover { background: var(--surface2); }
+
+/* ── Error ──────────────────────────────────────────────────────────────────── */
+.error {
+  color: var(--red);
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  background: rgba(255,23,68,0.1);
+  border-radius: var(--radius);
+}
+
+/* ── Divider ────────────────────────────────────────────────────────────────── */
+.divider {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.82rem;
+  position: relative;
+  padding: 4px 0;
+}
+.divider::before, .divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 42%;
+  height: 1px;
+  background: #2a2a2a;
+}
+.divider::before { left: 0; }
+.divider::after  { right: 0; }
+
+/* ── Home ───────────────────────────────────────────────────────────────────── */
+.home-actions { display: flex; flex-direction: column; gap: 12px; }
+
+/* ── Lobby ──────────────────────────────────────────────────────────────────── */
+.big-code {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 10px;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.share-link {
+  font-size: 0.8rem;
+  color: var(--dim);
+  word-break: break-all;
+}
+
+.player-chip {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.player-chip .crown { color: #ffd700; }
+
+.waiting {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.95rem;
+  padding: 16px;
+}
+
+/* ── Question ───────────────────────────────────────────────────────────────── */
+.options { display: flex; flex-direction: column; gap: 10px; }
+
+.option-btn {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--surface2);
+}
+
+.option-btn.selected {
+  border-color: var(--accent);
+  background: rgba(255,69,0,0.12);
+}
+
+.option-btn:disabled { cursor: default; }
+
+.submitted {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.9rem;
+}
+
+/* ── Host bar ───────────────────────────────────────────────────────────────── */
+.host-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+}
+
+.host-bar span {
+  font-size: 0.88rem;
+  color: var(--dim);
+  white-space: nowrap;
+}
+
+.host-bar button {
+  width: auto;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+}
+
+/* ── Reveal ─────────────────────────────────────────────────────────────────── */
+.reveal-answers { display: flex; flex-direction: column; gap: 8px; }
+
+.reveal-row {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reveal-row .r-name {
+  font-weight: 600;
+  min-width: 72px;
+  font-size: 0.95rem;
+}
+
+.reveal-row .r-answer {
+  flex: 1;
+  color: var(--dim);
+  font-size: 0.88rem;
+}
+
+.score-badge {
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ── Leaderboard ────────────────────────────────────────────────────────────── */
+.lb-row {
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  margin-bottom: 6px;
+  border: 1px solid transparent;
+}
+
+.lb-row.first { border-color: var(--green); }
+
+.lb-row .lb-rank  { color: var(--dim); font-size: 0.85rem; width: 28px; }
+.lb-row .lb-name  { flex: 1; padding: 0 8px; font-size: 0.95rem; }
+.lb-row .lb-score { font-weight: 700; font-size: 0.95rem; }

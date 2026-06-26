@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "category": "movies",
+    "text": "Your go-to Friday night movie genre?",
+    "options": [
+      { "text": "Sci-fi / dystopian", "redditScore": 92 },
+      { "text": "Action / Marvel", "redditScore": 80 },
+      { "text": "Horror", "redditScore": 45 },
+      { "text": "Rom-com", "redditScore": 8 }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "movies",
+    "text": "Which movie do you bring up unprompted at parties?",
+    "options": [
+      { "text": "Interstellar", "redditScore": 95 },
+      { "text": "The Dark Knight", "redditScore": 88 },
+      { "text": "La La Land", "redditScore": 15 },
+      { "text": "Mamma Mia", "redditScore": 5 }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "movies",
+    "text": "You're rewatching a movie tonight. Which one?",
+    "options": [
+      { "text": "Fight Club", "redditScore": 90 },
+      { "text": "Shrek", "redditScore": 55 },
+      { "text": "La La Land", "redditScore": 12 },
+      { "text": "Twilight", "redditScore": 3 }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "books",
+    "text": "What do you actually read?",
+    "options": [
+      { "text": "Sci-fi (Dune, Asimov, Liu Cixin)", "redditScore": 91 },
+      { "text": "Fantasy epics (Sanderson, Tolkien)", "redditScore": 88 },
+      { "text": "Literary fiction", "redditScore": 25 },
+      { "text": "I don't really read", "redditScore": 10 }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "books",
+    "text": "Someone asks for a book recommendation. You say:",
+    "options": [
+      { "text": "Hitchhiker's Guide to the Galaxy", "redditScore": 92 },
+      { "text": "Atomic Habits", "redditScore": 60 },
+      { "text": "Whatever Oprah recommends", "redditScore": 6 },
+      { "text": "A romance novel", "redditScore": 4 }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "food",
+    "text": "Friday night, you're picking dinner. You choose:",
+    "options": [
+      { "text": "Homemade ramen (it took 6 hours)", "redditScore": 90 },
+      { "text": "Sourdough pizza I made myself", "redditScore": 83 },
+      { "text": "Whatever's in the fridge", "redditScore": 28 },
+      { "text": "McDonald's, honestly", "redditScore": 18 }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "food",
+    "text": "First date restaurant pick?",
+    "options": [
+      { "text": "A ramen spot I found in a subreddit", "redditScore": 92 },
+      { "text": "Somewhere with good vibes", "redditScore": 20 },
+      { "text": "A steakhouse", "redditScore": 28 },
+      { "text": "Wherever they want", "redditScore": 22 }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "food",
+    "text": "Your niche food project right now?",
+    "options": [
+      { "text": "Maintaining a sourdough starter", "redditScore": 88 },
+      { "text": "Learning to make hot sauce", "redditScore": 72 },
+      { "text": "Meal prepping for the week", "redditScore": 60 },
+      { "text": "I don't really have one", "redditScore": 15 }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "drinks",
+    "text": "Drink of choice at a party?",
+    "options": [
+      { "text": "A craft IPA I specifically sought out", "redditScore": 88 },
+      { "text": "Whatever's in the cooler", "redditScore": 18 },
+      { "text": "Gin & tonic", "redditScore": 30 },
+      { "text": "I don't drink", "redditScore": 55 }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "tech",
+    "text": "What's on your desk?",
+    "options": [
+      { "text": "Custom PC with a mechanical keyboard I spec'd myself", "redditScore": 96 },
+      { "text": "A gaming laptop", "redditScore": 68 },
+      { "text": "MacBook Pro", "redditScore": 44 },
+      { "text": "Whatever my job gave me", "redditScore": 10 }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "tech",
+    "text": "Your phone is:",
+    "options": [
+      { "text": "Android — I've considered degoogling it", "redditScore": 95 },
+      { "text": "Android — I just prefer it", "redditScore": 75 },
+      { "text": "iPhone — it just works", "redditScore": 28 },
+      { "text": "iPhone — everyone has one", "redditScore": 12 }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "tech",
+    "text": "Your opinion on using Linux:",
+    "options": [
+      { "text": "Daily driver, I use Arch btw", "redditScore": 99 },
+      { "text": "I use it for servers / coding", "redditScore": 80 },
+      { "text": "Tried it once, went back to Windows/Mac", "redditScore": 40 },
+      { "text": "Never touched it", "redditScore": 8 }
+    ]
+  },
+  {
+    "id": 13,
+    "category": "social",
+    "text": "Someone invites you to a party on Saturday. You:",
+    "options": [
+      { "text": "Stay home — I had plans (gaming / reading)", "redditScore": 92 },
+      { "text": "Go but end up in a corner with one person", "redditScore": 75 },
+      { "text": "Cancel last minute, felt drained thinking about it", "redditScore": 80 },
+      { "text": "Go, love meeting new people", "redditScore": 8 }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "social",
+    "text": "Someone makes small talk about the weather. You:",
+    "options": [
+      { "text": "Explain the meteorological cause in detail", "redditScore": 90 },
+      { "text": "Give a one-word answer and look at your phone", "redditScore": 82 },
+      { "text": "Redirect to something more interesting", "redditScore": 70 },
+      { "text": "Engage and chat", "redditScore": 10 }
+    ]
+  },
+  {
+    "id": 15,
+    "category": "social",
+    "text": "Someone is wrong on the internet. You:",
+    "options": [
+      { "text": "Post a detailed thread debunking it with sources", "redditScore": 98 },
+      { "text": "Reply with a correction they didn't ask for", "redditScore": 92 },
+      { "text": "Upvote a rebuttal comment", "redditScore": 60 },
+      { "text": "Let it go", "redditScore": 5 }
+    ]
+  },
+  {
+    "id": 16,
+    "category": "music",
+    "text": "Your most-played genre?",
+    "options": [
+      { "text": "Post-rock / math rock / prog", "redditScore": 92 },
+      { "text": "Metal (some subgenre most people haven't heard of)", "redditScore": 88 },
+      { "text": "Whatever Spotify recommends", "redditScore": 30 },
+      { "text": "Pop", "redditScore": 5 }
+    ]
+  },
+  {
+    "id": 17,
+    "category": "music",
+    "text": "Your opinion on Top 40?",
+    "options": [
+      { "text": "Manufactured garbage for people who don't really listen", "redditScore": 90 },
+      { "text": "Objectively worse than it was 20 years ago", "redditScore": 82 },
+      { "text": "Fine background noise", "redditScore": 20 },
+      { "text": "Some of it's catchy, I like it", "redditScore": 5 }
+    ]
+  },
+  {
+    "id": 18,
+    "category": "hobbies",
+    "text": "Your main hobby is:",
+    "options": [
+      { "text": "PC gaming (master race)", "redditScore": 90 },
+      { "text": "Reading speculative fiction", "redditScore": 85 },
+      { "text": "Cooking elaborate meals and photographing them", "redditScore": 72 },
+      { "text": "Playing team sports", "redditScore": 10 }
+    ]
+  },
+  {
+    "id": 19,
+    "category": "hobbies",
+    "text": "Your niche hobby you want people to ask about:",
+    "options": [
+      { "text": "Mechanical keyboards", "redditScore": 97 },
+      { "text": "Home lab / self-hosting", "redditScore": 94 },
+      { "text": "Sourdough bread", "redditScore": 82 },
+      { "text": "Fantasy football", "redditScore": 20 }
+    ]
+  },
+  {
+    "id": 20,
+    "category": "hobbies",
+    "text": "Your approach to fitness:",
+    "options": [
+      { "text": "Calisthenics with a tracking spreadsheet I built", "redditScore": 90 },
+      { "text": "Gym — track macros, count every gram", "redditScore": 72 },
+      { "text": "Running sometimes", "redditScore": 30 },
+      { "text": "Whatever sounds fun", "redditScore": 12 }
+    ]
+  },
+  {
+    "id": 21,
+    "category": "tv",
+    "text": "Your comfort show is:",
+    "options": [
+      { "text": "The Office (watched it 12 times)", "redditScore": 88 },
+      { "text": "A prestige HBO drama", "redditScore": 65 },
+      { "text": "Whatever my partner wants", "redditScore": 12 },
+      { "text": "Real Housewives", "redditScore": 2 }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "tv",
+    "text": "Your take on streaming services:",
+    "options": [
+      { "text": "I torrent — streaming is a corporate racket", "redditScore": 92 },
+      { "text": "I have all of them", "redditScore": 50 },
+      { "text": "Just Netflix", "redditScore": 28 },
+      { "text": "I barely watch TV", "redditScore": 40 }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "opinions",
+    "text": "After a full day of socializing, you feel:",
+    "options": [
+      { "text": "Completely drained — need 48 hours alone", "redditScore": 90 },
+      { "text": "Need to decompress with a game or book", "redditScore": 80 },
+      { "text": "Mixed, depends on the people", "redditScore": 35 },
+      { "text": "Energized, love being around people", "redditScore": 5 }
+    ]
+  },
+  {
+    "id": 24,
+    "category": "opinions",
+    "text": "Your take on AI?",
+    "options": [
+      { "text": "Already building projects with it and posting about them", "redditScore": 88 },
+      { "text": "Fascinating but dangerous — wrote an essay about it", "redditScore": 85 },
+      { "text": "Useful tool, not that deep", "redditScore": 38 },
+      { "text": "Haven't really used it", "redditScore": 10 }
+    ]
+  },
+  {
+    "id": 25,
+    "category": "lifestyle",
+    "text": "Ideal Saturday?",
+    "options": [
+      { "text": "Optimized morning routine, gym, 4-hour deep work session", "redditScore": 92 },
+      { "text": "Sleep in, game all day, order food", "redditScore": 85 },
+      { "text": "See what comes up", "redditScore": 22 },
+      { "text": "Plans with friends", "redditScore": 8 }
+    ]
+  }
+]
